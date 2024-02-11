@@ -3,9 +3,28 @@
 <head>
   <title>당신들의 벽</title>
   <meta charset="utf-8">
-</head>  
+</head>
+<style>
+  .elden{
+    color:red;
+    font-size:large;
+    font-weight:bold;
+  }
+</style>
 <body>
-  <h1><a href="당신들의 벽.html">당신들의 벽</a></h1>
+  <h1><a href="index.html">당신들의 벽</a></h1>
+  <input id="껌활" type="button" value="껌껌" onclick="
+    if(document.querySelector('#껌활').value === '껌껌'){
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('body').style.color='white';
+      document.querySelector('#껌활').value='활짝';
+    }else{
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+      document.querySelector('#껌활').value='껌껌';
+    }
+    "
+  >
   <ol>
     <li><a href="소개.html">소개</a></li>
     <li><a href="규칙.html">규칙</a></li>
@@ -14,7 +33,7 @@
   <h2>대략적인 진행</h2>
   <p style="margin-top:40px;">이 개발 페이지는 <strong>일종의 <u>과정</u>으로</strong> 삼자. 별다른 내용을 넣지는 않을 것이다.</p>
   <img src="채은 씨의 그릭요거트.jpg" width="500px">
-  <p>지금은 태그를 써 보고 있다. 배운 태그들이 다 기억나지는 않는다.</p>
-  <p><a href="https://blog.naver.com/tjd292" target="_blank">블로그 주소는 여기.</a></p>
+  <p>지금은 <sapn class="elden">태그</sapn>를 써 보고 있다. 배운 <span class="elden">태그</span>들이 다 기억나지는 않는다.</p>
+  <p><a href="https://blog.naver.com/tjd292" target="_blank">블로그로 가기.</a></p>
 </body>
 </html>
